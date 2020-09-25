@@ -4,6 +4,7 @@ import { View, Text, FlatList , TouchableHighlight,StyleSheet} from 'react-nativ
 import { useNavigation } from '@react-navigation/native';
 
 const availableZipItems = [
+    
     { place: 'Hatyai', code: '90110' },
     { place: 'Trang', code: '92000' },
     { place: 'Chiangmai', code: '50000' },
@@ -14,6 +15,8 @@ const availableZipItems = [
 const ZipItem = ({ place, code, navigation }) => (
     <TouchableHighlight onPress={() => navigation.navigate('Weather', { zipCode: code })}>
         <View>
+            <Text> Weather TODAY !! </Text>
+        <View style={styles.box}></View>
         <Text style={styles.medium}> {place}</Text>
         <Text style={styles.medium}>{code}</Text>
         </View>
@@ -58,9 +61,9 @@ const styles = StyleSheet.create({
     },
     box: {
         backgroundColor : 'red',
-        opacity : 50,
-        width : 100,
-        height:60,
-    },
+        opacity :30,
+        width : 1000,
+        height:10,
+    }
 });
 
