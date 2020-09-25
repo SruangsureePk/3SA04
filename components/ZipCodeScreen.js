@@ -54,7 +54,13 @@ const styles = StyleSheet.create({
     medium: {
         fontSize:40,
         color: 'pink',
-        paddingLeft : 100,
-    }
+        paddingLeft : 100, 
+    },
+    box: {
+        backgroundColor : 'red',
+        opacity : 50,
+        width : 100,
+        height:60,
+    },
 });
 
