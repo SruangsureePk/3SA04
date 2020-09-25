@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
     medium: {
         fontSize:40,
         color: 'pink',
+        paddingLeft : 100,
     }
 });
 
